@@ -1,0 +1,27 @@
+{
+  "name": "okra-docs",
+  "version": "1.0.0",
+  "description": "Guides and reference materials to help you get started with an Okra integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krofax/Okra-Documentation.git"
+  },
+  "keywords": [
+    "API",
+    "Docs",
+    "Fintech"
+  ],
+  "author": "Blessing Krofegha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krofax/Okra-Documentation/issues"
+  },
+  "homepage": "https://github.com/krofax/Okra-Documentation#readme",
+  "devDependencies": {
+    "rdme": "^7.0.3"
+  }
+}
