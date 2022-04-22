@@ -1792,13 +1792,13 @@
               "encoding": {},
               "schema": {
                 "required": [
-                  "account",
+                  "account_id",
                   "page",
                   "limit"
                 ],
                 "type": "object",
                 "properties": {
-                  "account": {
+                  "account_id": {
                     "type": "string",
                     "description": "The account.id you want to get detailed information about.",
                     "example": "786hjgw9776uijj8973"
