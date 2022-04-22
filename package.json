@@ -15,13 +15,11 @@
     "Docs",
     "Fintech"
   ],
-  "author": "Blessing Krofegha",
+  "author": "Blessing Krofegha", 	
+  
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/krofax/Okra-Documentation/issues"
   },
-  "homepage": "https://github.com/krofax/Okra-Documentation#readme",
-  "devDependencies": {
-    "rdme": "^7.0.3"
-  }
+  "homepage": "https://github.com/krofax/Okra-Documentation#readme"
 }
