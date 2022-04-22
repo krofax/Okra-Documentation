@@ -11529,9 +11529,7 @@
                 "$ref": "#/components/schemas/RefreshTransactionsRequest"
               },
               "example": {
-                "account": "// account id",
-                "page": 1,
-                "limit": 1
+                "account_id": "jhjdh78879898e9w9oid"
               }
             }
           },
@@ -36790,22 +36788,12 @@
         "title": "RefreshTransactionsRequest",
         "type": "object",
         "properties": {
-          "account": {
+          "account_id": {
             "type": "string"
-          },
-          "page": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "limit": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "example": {
-          "account": "// account id",
-          "page": 1,
-          "limit": 1
+          "account_id": "jhjdh78879898e9w9oid"
         }
       },
       "GettransactionbynubanRequest": {
