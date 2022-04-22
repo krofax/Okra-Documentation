@@ -4,7 +4,7 @@
   "description": "Guides and reference materials to help you get started with an Okra integration.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "rdme openapi --key TLpoqY6zPqz4oEBYsWsrmoKGfnqkyL3J docs.json"
   },
   "repository": {
     "type": "git",
