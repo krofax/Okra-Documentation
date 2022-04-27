@@ -11922,7 +11922,7 @@
         ]
       }
     },
-    "/process-one": {
+    "/products/spending-patterns/process": {
       "post": {
         "tags": [
           "Transactions"
