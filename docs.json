@@ -7373,6 +7373,303 @@
         ]
       }
     },
+    "/products/kyc/nuban-name-verify": {
+      "post": {
+        "tags": [
+          "Identity"
+        ],
+        "summary": "Nuban Name Verify",
+        "description": "#### What is NUBAN?\n\nNUBAN means Nigerian Uniform Bank Account Number. It is standardized system for numbering bank accounts in Nigeria\n\nTThis endpoint allows you to verify an account's existence and its holder's name using NUBAN.\n\n> **NOTE** - This endpoint is only available for Nigerians.",
+        "operationId": "Nuban Name Verify",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "nuban",
+                  "bank"
+                ],
+                "type": "object",
+                "properties": {
+                  "nuban": {
+                    "type": "string",
+                    "description": "Nuban number of a user"
+                  },
+                  "bank": {
+                    "type": "string",
+                    "description": "Okra Bank ID identifier"
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "404": {
+            "description": "Not Found",
+            "headers": {
+              "Date": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "Mon, 16 Aug 2021 08:53:20 GMT"
+                    },
+                    "example": "Mon, 16 Aug 2021 08:53:20 GMT"
+                  }
+                }
+              },
+              "Content-Length": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "55"
+                    },
+                    "example": "55"
+                  }
+                }
+              },
+              "Connection": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "keep-alive"
+                    },
+                    "example": "keep-alive"
+                  }
+                }
+              },
+              "Set-Cookie": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "AWSALB=o2J1++zFRN9U1mXX4x1fXuRm/QzpwDirytDkpdwgPOtotEOYWDH1ePvsXB0OWaTEdiR6jxaJ9bWgUjSfOmdv79uaK/i3+/VuYWiYWais0kW/g/erRB34dEKjqh51; Expires=Mon, 23 Aug 2021 08:53:20 GMT; Path=/"
+                    },
+                    "example": "AWSALB=o2J1++zFRN9U1mXX4x1fXuRm/QzpwDirytDkpdwgPOtotEOYWDH1ePvsXB0OWaTEdiR6jxaJ9bWgUjSfOmdv79uaK/i3+/VuYWiYWais0kW/g/erRB34dEKjqh51; Expires=Mon, 23 Aug 2021 08:53:20 GMT; Path=/"
+                  }
+                }
+              },
+              "Server": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "nginx/1.18.0"
+                    },
+                    "example": "nginx/1.18.0"
+                  }
+                }
+              },
+              "Content-Security-Policy": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                    },
+                    "example": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+                  }
+                }
+              },
+              "X-DNS-Prefetch-Control": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "off"
+                    },
+                    "example": "off"
+                  }
+                }
+              },
+              "Expect-CT": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "max-age=0"
+                    },
+                    "example": "max-age=0"
+                  }
+                }
+              },
+              "X-Frame-Options": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "SAMEORIGIN"
+                    },
+                    "example": "SAMEORIGIN"
+                  }
+                }
+              },
+              "Strict-Transport-Security": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "max-age=15552000; includeSubDomains"
+                    },
+                    "example": "max-age=15552000; includeSubDomains"
+                  }
+                }
+              },
+              "X-Download-Options": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "noopen"
+                    },
+                    "example": "noopen"
+                  }
+                }
+              },
+              "X-Content-Type-Options": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "nosniff"
+                    },
+                    "example": "nosniff"
+                  }
+                }
+              },
+              "X-Permitted-Cross-Domain-Policies": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "none"
+                    },
+                    "example": "none"
+                  }
+                }
+              },
+              "Referrer-Policy": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "no-referrer"
+                    },
+                    "example": "no-referrer"
+                  }
+                }
+              },
+              "X-XSS-Protection": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "0"
+                    },
+                    "example": "0"
+                  }
+                }
+              },
+              "x-documentation-url": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "https://docs.okra.ng/logs/5b4204b8-3b34-4965-8b8e-2fbaa718532e"
+                    },
+                    "example": "https://docs.okra.ng/logs/5b4204b8-3b34-4965-8b8e-2fbaa718532e"
+                  }
+                }
+              },
+              "Access-Control-Allow-Origin": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "*"
+                    },
+                    "example": "*"
+                  }
+                }
+              },
+              "Access-Control-Allow-Methods": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                    },
+                    "example": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                  }
+                }
+              },
+              "Access-Control-Allow-Headers": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "X-Requested-With,content-type,authorization"
+                    },
+                    "example": "X-Requested-With,content-type,authorization"
+                  }
+                }
+              },
+              "Access-Control-Allow-Credentials": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "true"
+                    },
+                    "example": "true"
+                  }
+                }
+              },
+              "ETag": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "W/\"37-4Jy4eh80KjN86k7neJuJxQ+zDro\""
+                    },
+                    "example": "W/\"37-4Jy4eh80KjN86k7neJuJxQ+zDro\""
+                  }
+                }
+              }
+            },
+            "content": {
+              "application/json; charset=utf-8": {
+                "schema": {
+                  "$ref": "#/components/schemas/NubanVerify1"
+                },
+                "example": {
+                  "status": 404,
+                  "message": "Requested resource not found"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [
+          {
+            "bearer": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "http://example.com",
+            "variables": {}
+          }
+        ]
+      }
+    },
     "/products/identity/merge": {
       "post": {
         "tags": [
@@ -30238,7 +30535,6 @@
       },
       "Data17": {
         "title": "Data17",
-        
         "type": "object",
         "properties": {
           "colors": {
@@ -32071,7 +32367,7 @@
       "BVNverify": {
         "title": "BVNverify",
         "type": "object",
-        "description":"It returns the identity of the users",
+        "description": "It returns the identity of the users",
         "properties": {
           "status": {
             "type": "string"
