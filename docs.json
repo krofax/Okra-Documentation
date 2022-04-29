@@ -7657,7 +7657,107 @@
           },
           "200": {
             "description": "OK",
-            "headers": {},
+            "headers": {
+              "X-Powered-By": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "Express"
+                    },
+                    "example": "Express"
+                  }
+                }
+              },
+              "Access-Control-Allow-Methods": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                    },
+                    "example": "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+                  }
+                }
+              },
+              "Access-Control-Allow-Headers": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "X-Requested-With,content-type,authorization"
+                    },
+                    "example": "X-Requested-With,content-type,authorization"
+                  }
+                }
+              },
+              "Access-Control-Allow-Credentials": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "true"
+                    },
+                    "example": "true"
+                  }
+                }
+              },
+              "Content-Length": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "1186"
+                    },
+                    "example": "1186"
+                  }
+                }
+              },
+              "ETag": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "W/\"4a2-1RU21vHGSp5iqVBya9d7joMgPFw\""
+                    },
+                    "example": "W/\"4a2-1RU21vHGSp5iqVBya9d7joMgPFw\""
+                  }
+                }
+              },
+              "Date": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "Wed, 28 Oct 2020 09:44:59 GMT"
+                    },
+                    "example": "Wed, 28 Oct 2020 09:44:59 GMT"
+                  }
+                }
+              },
+              "Connection": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "keep-alive"
+                    },
+                    "example": "keep-alive"
+                  }
+                }
+              },
+              "Keep-Alive": {
+                "content": {
+                  "text/plain": {
+                    "schema": {
+                      "type": "string",
+                      "example": "timeout=5"
+                    },
+                    "example": "timeout=5"
+                  }
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
