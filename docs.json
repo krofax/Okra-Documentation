@@ -7655,8 +7655,8 @@
               }
             }
           },
-          "200": {
-            "description": "OK",
+          "default": {
+            "description": "",
             "headers": {},
             "content": {
               "application/json": {
