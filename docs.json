@@ -7655,7 +7655,7 @@
               }
             }
           },
-          "default": {
+          "200": {
             "description": "",
             "headers": {},
             "content": {
