@@ -7656,7 +7656,7 @@
             }
           },
           "200": {
-            "description": "",
+            "description": "OK",
             "headers": {},
             "content": {
               "application/json": {
