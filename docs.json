@@ -33165,11 +33165,6 @@
       },
       "NubanVerifyName": {
         "title": "NubanVerifyName",
-        "required": [
-          "status",
-          "message",
-          "data"
-        ],
         "type": "object",
         "properties": {
           "status": {
