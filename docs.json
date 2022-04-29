@@ -7654,6 +7654,76 @@
                 }
               }
             }
+          },
+          "default": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NubanVerifyName"
+                },
+                "example": {
+                  "status": "success",
+                  "message": "Identity successfully retrieved",
+                  "data": {
+                    "identity": {
+                      "id": "6250260e97d7e8e73ac4d8a2",
+                      "fullname": "PETER  KOLA  MUSA ",
+                      "firstname": "PETER ",
+                      "middlename": "KOLA ",
+                      "lastname": "MUSA "
+                    },
+                    "customer": "624cab9900d52b051224af43",
+                    "account": "624f9c78234c3320829af1e9",
+                    "record": "626a72ab189J3a527384d418",
+                    "receipt": {
+                      "status": true,
+                      "msg": "Receipt has been successfully created",
+                      "data": {
+                        "receipt": {
+                          "adjustment": {
+                            "receipts": []
+                          },
+                          "charge_breakdown": {
+                            "vat": 0
+                          },
+                          "breakdown": {
+                            "discount": 0,
+                            "billable_products": []
+                          },
+                          "billingStatus": true,
+                          "adjusted": null,
+                          "adjusted_receipt": false,
+                          "paid": true,
+                          "fixed": false,
+                          "adjusted_type": null,
+                          "method": "wallet",
+                          "charge": 62.25,
+                          "wallet_balance": 1225049.75,
+                          "addons": [],
+                          "archived": false,
+                          "micro_lending": false,
+                          "ussd_pricing": false,
+                          "ussd_pricing_discount": 0,
+                          "micro_lending_discount": 0,
+                          "_id": "626a72c6575f3a527384d41d",
+                          "owner": "605483dac867207f800f1847",
+                          "type": "nuban-name-verify",
+                          "currency": "NGN",
+                          "plan": "payg",
+                          "plan_type": "5d96082bf170152c5c38fa16",
+                          "record": "626a72ab575f3a527384d418",
+                          "created_at": "2022-04-28T10:56:06.162Z",
+                          "last_updated": "2022-04-28T10:56:06.162Z",
+                          "__v": 0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "deprecated": false,
@@ -32991,6 +33061,460 @@
         "example": {
           "status": 404,
           "message": "Requested resource not found"
+        }
+      },
+      "NubanVerifyName": {
+        "title": "NubanVerifyName",
+        "required": [
+          "status",
+          "message",
+          "data"
+        ],
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/Data90"
+          }
+        },
+        "example": {
+          "status": "success",
+          "message": "Identity successfully retrieved",
+          "data": {
+            "identity": {
+              "id": "6250260e97d7e8e73ac4d8a2",
+              "fullname": "PETER  KOLA  MUSA ",
+              "firstname": "PETER ",
+              "middlename": "KOLA ",
+              "lastname": "MUSA "
+            },
+            "customer": "624cab9900d52b051224af43",
+            "account": "624f9c78234c3320829af1e9",
+            "record": "626a72ab189J3a527384d418",
+            "receipt": {
+              "status": true,
+              "msg": "Receipt has been successfully created",
+              "data": {
+                "receipt": {
+                  "adjustment": {
+                    "receipts": []
+                  },
+                  "charge_breakdown": {
+                    "vat": 0
+                  },
+                  "breakdown": {
+                    "discount": 0,
+                    "billable_products": []
+                  },
+                  "billingStatus": true,
+                  "adjusted": null,
+                  "adjusted_receipt": false,
+                  "paid": true,
+                  "fixed": false,
+                  "adjusted_type": null,
+                  "method": "wallet",
+                  "charge": 62.25,
+                  "wallet_balance": 1225049.75,
+                  "addons": [],
+                  "archived": false,
+                  "micro_lending": false,
+                  "ussd_pricing": false,
+                  "ussd_pricing_discount": 0,
+                  "micro_lending_discount": 0,
+                  "_id": "626a72c6575f3a527384d41d",
+                  "owner": "605483dac867207f800f1847",
+                  "type": "nuban-name-verify",
+                  "currency": "NGN",
+                  "plan": "payg",
+                  "plan_type": "5d96082bf170152c5c38fa16",
+                  "record": "626a72ab575f3a527384d418",
+                  "created_at": "2022-04-28T10:56:06.162Z",
+                  "last_updated": "2022-04-28T10:56:06.162Z",
+                  "__v": 0
+                }
+              }
+            }
+          }
+        }
+      },
+      "Data90": {
+        "title": "Data90",
+        "type": "object",
+        "properties": {
+          "identity": {
+            "$ref": "#/components/schemas/Identity5"
+          },
+          "customer": {
+            "type": "string"
+          },
+          "account": {
+            "type": "string"
+          },
+          "record": {
+            "type": "string"
+          },
+          "receipt": {
+            "$ref": "#/components/schemas/Receipt16"
+          }
+        },
+        "example": {
+          "identity": {
+            "id": "6250260e97d7e8e73ac4d8a2",
+            "fullname": "PETER  KOLA  MUSA ",
+            "firstname": "PETER ",
+            "middlename": "KOLA ",
+            "lastname": "MUSA "
+          },
+          "customer": "624cab9900d52b051224af43",
+          "account": "624f9c78234c3320829af1e9",
+          "record": "626a72ab189J3a527384d418",
+          "receipt": {
+            "status": true,
+            "msg": "Receipt has been successfully created",
+            "data": {
+              "receipt": {
+                "adjustment": {
+                  "receipts": []
+                },
+                "charge_breakdown": {
+                  "vat": 0
+                },
+                "breakdown": {
+                  "discount": 0,
+                  "billable_products": []
+                },
+                "billingStatus": true,
+                "adjusted": null,
+                "adjusted_receipt": false,
+                "paid": true,
+                "fixed": false,
+                "adjusted_type": null,
+                "method": "wallet",
+                "charge": 62.25,
+                "wallet_balance": 1225049.75,
+                "addons": [],
+                "archived": false,
+                "micro_lending": false,
+                "ussd_pricing": false,
+                "ussd_pricing_discount": 0,
+                "micro_lending_discount": 0,
+                "_id": "626a72c6575f3a527384d41d",
+                "owner": "605483dac867207f800f1847",
+                "type": "nuban-name-verify",
+                "currency": "NGN",
+                "plan": "payg",
+                "plan_type": "5d96082bf170152c5c38fa16",
+                "record": "626a72ab575f3a527384d418",
+                "created_at": "2022-04-28T10:56:06.162Z",
+                "last_updated": "2022-04-28T10:56:06.162Z",
+                "__v": 0
+              }
+            }
+          }
+        }
+      },
+      "Identity5": {
+        "title": "Identity5",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "fullname": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "middlename": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "id": "6250260e97d7e8e73ac4d8a2",
+          "fullname": "PETER  KOLA  MUSA ",
+          "firstname": "PETER ",
+          "middlename": "KOLA ",
+          "lastname": "MUSA "
+        }
+      },
+      "Receipt16": {
+        "title": "Receipt16",
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "boolean"
+          },
+          "msg": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/Data13"
+          }
+        },
+        "example": {
+          "status": true,
+          "msg": "Receipt has been successfully created",
+          "data": {
+            "receipt": {
+              "adjustment": {
+                "receipts": []
+              },
+              "charge_breakdown": {
+                "vat": 0
+              },
+              "breakdown": {
+                "discount": 0,
+                "billable_products": []
+              },
+              "billingStatus": true,
+              "adjusted": null,
+              "adjusted_receipt": false,
+              "paid": true,
+              "fixed": false,
+              "adjusted_type": null,
+              "method": "wallet",
+              "charge": 62.25,
+              "wallet_balance": 1225049.75,
+              "addons": [],
+              "archived": false,
+              "micro_lending": false,
+              "ussd_pricing": false,
+              "ussd_pricing_discount": 0,
+              "micro_lending_discount": 0,
+              "_id": "626a72c6575f3a527384d41d",
+              "owner": "605483dac867207f800f1847",
+              "type": "nuban-name-verify",
+              "currency": "NGN",
+              "plan": "payg",
+              "plan_type": "5d96082bf170152c5c38fa16",
+              "record": "626a72ab575f3a527384d418",
+              "created_at": "2022-04-28T10:56:06.162Z",
+              "last_updated": "2022-04-28T10:56:06.162Z",
+              "__v": 0
+            }
+          }
+        }
+      },
+      "Data13": {
+        "title": "Data13",
+        "type": "object",
+        "properties": {
+          "receipt": {
+            "$ref": "#/components/schemas/Receipt5"
+          }
+        },
+        "example": {
+          "receipt": {
+            "adjustment": {
+              "receipts": []
+            },
+            "charge_breakdown": {
+              "vat": 0
+            },
+            "breakdown": {
+              "discount": 0,
+              "billable_products": []
+            },
+            "billingStatus": true,
+            "adjusted": null,
+            "adjusted_receipt": false,
+            "paid": true,
+            "fixed": false,
+            "adjusted_type": null,
+            "method": "wallet",
+            "charge": 62.25,
+            "wallet_balance": 1225049.75,
+            "addons": [],
+            "archived": false,
+            "micro_lending": false,
+            "ussd_pricing": false,
+            "ussd_pricing_discount": 0,
+            "micro_lending_discount": 0,
+            "_id": "626a72c6575f3a527384d41d",
+            "owner": "605483dac867207f800f1847",
+            "type": "nuban-name-verify",
+            "currency": "NGN",
+            "plan": "payg",
+            "plan_type": "5d96082bf170152c5c38fa16",
+            "record": "626a72ab575f3a527384d418",
+            "created_at": "2022-04-28T10:56:06.162Z",
+            "last_updated": "2022-04-28T10:56:06.162Z",
+            "__v": 0
+          }
+        }
+      },
+      "Receipt17": {
+        "title": "Receipt",
+        "type": "object",
+        "properties": {
+          "adjustment": {
+            "$ref": "#/components/schemas/Adjustment16"
+          },
+          "charge_breakdown": {
+            "$ref": "#/components/schemas/ChargeBreakdown16"
+          },
+          "breakdown": {
+            "$ref": "#/components/schemas/Breakdown"
+          },
+          "billingStatus": {
+            "type": "boolean"
+          },
+          "adjusted": {
+            "type": "string",
+            "nullable": true
+          },
+          "adjusted_receipt": {
+            "type": "boolean"
+          },
+          "paid": {
+            "type": "boolean"
+          },
+          "fixed": {
+            "type": "boolean"
+          },
+          "adjusted_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "method": {
+            "type": "string"
+          },
+          "charge": {
+            "type": "number"
+          },
+          "wallet_balance": {
+            "type": "number"
+          },
+          "addons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": ""
+          },
+          "archived": {
+            "type": "boolean"
+          },
+          "micro_lending": {
+            "type": "boolean"
+          },
+          "ussd_pricing": {
+            "type": "boolean"
+          },
+          "ussd_pricing_discount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "micro_lending_discount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "_id": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "plan": {
+            "type": "string"
+          },
+          "plan_type": {
+            "type": "string"
+          },
+          "record": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string"
+          },
+          "__v": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "example": {
+          "adjustment": {
+            "receipts": []
+          },
+          "charge_breakdown": {
+            "vat": 0
+          },
+          "breakdown": {
+            "discount": 0,
+            "billable_products": []
+          },
+          "billingStatus": true,
+          "adjusted": null,
+          "adjusted_receipt": false,
+          "paid": true,
+          "fixed": false,
+          "adjusted_type": null,
+          "method": "wallet",
+          "charge": 62.25,
+          "wallet_balance": 1225049.75,
+          "addons": [],
+          "archived": false,
+          "micro_lending": false,
+          "ussd_pricing": false,
+          "ussd_pricing_discount": 0,
+          "micro_lending_discount": 0,
+          "_id": "626a72c6575f3a527384d41d",
+          "owner": "605483dac867207f800f1847",
+          "type": "nuban-name-verify",
+          "currency": "NGN",
+          "plan": "payg",
+          "plan_type": "5d96082bf170152c5c38fa16",
+          "record": "626a72ab575f3a527384d418",
+          "created_at": "2022-04-28T10:56:06.162Z",
+          "last_updated": "2022-04-28T10:56:06.162Z",
+          "__v": 0
+        }
+      },
+      "Adjustment16": {
+        "title": "Adjustment16",
+        "type": "object",
+        "properties": {
+          "receipts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": ""
+          }
+        },
+        "example": {
+          "receipts": []
+        }
+      },
+      "ChargeBreakdown16": {
+        "title": "ChargeBreakdown16",
+        "type": "object",
+        "properties": {
+          "vat": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "example": {
+          "vat": 0
         }
       },
       "MergeIdentity": {
