@@ -6569,7 +6569,7 @@
                   },
                   "company_name": {
                     "type": "string",
-                    "description": "Company name"
+                    "description": "The registered company name"
                   }
                 }
               }
@@ -6682,7 +6682,7 @@
               }
             },
             "content": {
-              "application/json; charset=utf-8": {
+              "application/x-www-form-urlencoded": {
                 "schema": {
                   "$ref": "#/components/schemas/RCverify"
                 },
@@ -33002,16 +33002,20 @@
         "type": "object",
         "properties": {
           "rc_no": {
-            "type": "string"
+            "type": "string",
+            "description": "The RC number of the company" 
           },
           "company_name": {
-            "type": "string"
+            "type": "string",
+            "description": "The registered company name"
           },
           "address": {
-            "type": "string"
+            "type": "string",
+            "description": "The company address"
           },
           "date_reg": {
-            "type": "string"
+            "type": "string",
+            "description": "The date the company was registered"
           }
         },
         "example": {
