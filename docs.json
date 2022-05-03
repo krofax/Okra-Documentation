@@ -33005,7 +33005,8 @@
             "type": "string"
           },
           "company_name": {
-            "type": "string"
+            "type": "string",
+            "description": "The registered company name"
           },
           "address": {
             "type": "string"
