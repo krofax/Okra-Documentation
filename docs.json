@@ -33002,20 +33002,16 @@
         "type": "object",
         "properties": {
           "rc_no": {
-            "type": "string",
-            "description": "The RC number of the company" 
+            "type": "string"
           },
           "company_name": {
-            "type": "string",
-            "description": "The registered company name"
+            "type": "string"
           },
           "address": {
-            "type": "string",
-            "description": "The company address"
+            "type": "string"
           },
           "date_reg": {
-            "type": "string",
-            "description": "The date the company was registered"
+            "type": "string"
           }
         },
         "example": {
