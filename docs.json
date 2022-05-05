@@ -33012,19 +33012,19 @@
         "properties": {
           "rc_no": {
             "type": "string",
-            "description": "The RC number of the company" 
+            "description": "The RC number of the company." 
           },
           "company_name": {
             "type": "string",
-            "description": "The registered company name"
+            "description": "The registered company name."
           },
           "address": {
             "type": "string",
-            "description": "The company address"
+            "description": "The company address."
           },
           "date_reg": {
             "type": "string",
-            "description": "The date the company was registered"
+            "description": "The date the company was registered."
           }
         },
         "example": {
