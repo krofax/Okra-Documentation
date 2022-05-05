@@ -32779,7 +32779,7 @@
           },
           "url": {
             "type": "string",
-            "description":"The url pointing to the image"
+            "description":"The url pointing to the image."
           },
           "image_type": {
             "type": "string",
