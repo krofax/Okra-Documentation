@@ -7037,7 +7037,7 @@
               }
             },
             "content": {
-              "application/json; charset=utf-8": {
+              "application/x-www-form-urlencoded": {
                 "schema": {
                   "$ref": "#/components/schemas/TINverify"
                 },
@@ -33119,16 +33119,20 @@
         "type": "object",
         "properties": {
           "tax_no": {
-            "type": "string"
+            "type": "string",
+            "description": "The tax number of the company"
           },
           "tax_payer_name": {
-            "type": "string"
+            "type": "string",
+            "description": "The tax payers name, usually the company name"
           },
           "tax_payer_phone": {
-            "type": "string"
+            "type": "string",
+            "description": "The phone number of the company that pays the tax"
           },
           "tax_payer_email": {
-            "type": "string"
+            "type": "string",
+            "description": "The email of the company that pays the tax"
           },
           "tax_authority": {
             "type": "string"
