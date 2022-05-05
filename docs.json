@@ -33097,7 +33097,7 @@
             "type": "string"
           },
           "details": {
-            "$ref": "#/components/schemas/TaxInfo"
+            "$ref": "#/components/schemas/Details2"
           }
         },
         "example": {
@@ -33114,10 +33114,9 @@
           }
         }
       },
-      "TaxInfo": {
-        "title": "TaxInfo",
+      "Details2": {
+        "title": "Details2",
         "type": "object",
-        "description": "Details regarding the tax information.",
         "properties": {
           "tax_no": {
             "type": "string",
