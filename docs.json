@@ -6237,7 +6237,7 @@
               }
             },
             "content": {
-              "application/json; charset=utf-8": {
+              "application/x-www-form-urlencoded": {
                 "schema": {
                   "$ref": "#/components/schemas/BVNverify"
                 },
@@ -32619,14 +32619,17 @@
         "type": "object",
         "properties": {
           "fullname": {
-            "type": "string"
+            "type": "string",
+            "description": "The name of the user"
           },
           "id": {
             "type": "string",
-            "nullable": true
+            "nullable": true,
+            "description": "Okra's unique identifier used to reference the current user."
           },
           "bvn": {
-            "type": "string"
+            "type": "string",
+            "description": "The bank verification number of the user"
           },
           "score": {
             "type": "string"
