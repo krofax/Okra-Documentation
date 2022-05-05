@@ -8129,7 +8129,7 @@
               }
             },
             "content": {
-              "application/json; charset=utf-8": {
+              "application/x-www-form-urlencoded": {
                 "schema": {
                   "$ref": "#/components/schemas/Getincomebyid"
                 },
@@ -23363,10 +23363,12 @@
         "type": "object",
         "properties": {
           "_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Okra's unique identifier used to reference the current owner."
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "description": "The fullname of the customer."
           }
         },
         "example": {
@@ -33786,17 +33788,18 @@
             "items": {
               "type": "string"
             },
-            "description": ""
+            "description": "An owner represents the entity who has access to a Okra widget and is the owner of all the accounts connected via Okra."
           },
           "record": {
             "type": "array",
             "items": {
               "type": "string"
             },
-            "description": ""
+            "description": "The record ID of the owner."
           },
           "_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Okra's unique identifier used to reference the current owner."
           },
           "customer": {
             "$ref": "#/components/schemas/Customer"
@@ -33806,36 +33809,43 @@
             "format": "int32"
           },
           "confidence": {
-            "type": "string"
+            "type": "string",
+            "description": "Okra's level of confidence that the source is actually an income. \n We return one of the following enum values. \n - HIGH \n - MEDIUM"
           },
           "created_at": {
-            "type": "string"
+            "type": "string",
+            "description": "The ISO-8601 timestamp of when the data point was first created in Okra's database."
           },
           "last_updated": {
-            "type": "string"
+            "type": "string",
+            "description": "The ISO-8601 timestamp of when the data point was last updated in Belvo's database."
           },
           "last_year_income": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "description": "The sum of the income the previous year"
           },
           "max_number_of_overlapping_income_streams": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "description": "The sum number of income streams of the user, that overlapse"
           },
           "number_of_income_streams": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "description": "The number of multiple income streams of the user."
           },
           "projected_yearly_income": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "description": "The expected annual income of the user."
           },
           "streams": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Stream"
             },
-            "description": ""
+            "description": "An array of object containing details of a user stream of income."
           },
           "env": {
             "type": "string"
@@ -33895,17 +33905,20 @@
             "$ref": "#/components/schemas/Account5"
           },
           "avg_monthly_income": {
-            "type": "number"
+            "type": "number",
+            "description": "The average monthly salary of the user."
           },
           "days": {
             "type": "integer",
             "format": "int32"
           },
           "monthly_income": {
-            "type": "number"
+            "type": "number",
+            "description": "The monthly income of a user."
           },
           "income_type": {
-            "type": "string"
+            "type": "string",
+            "description": "The type of income of a user."
           }
         },
         "example": {
