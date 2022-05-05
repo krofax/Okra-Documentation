@@ -32620,7 +32620,7 @@
         "properties": {
           "fullname": {
             "type": "string",
-            "description": "The name of the user"
+            "description": "The fullname of the user"
           },
           "id": {
             "type": "string",
@@ -32629,7 +32629,7 @@
           },
           "bvn": {
             "type": "string",
-            "description": "The bank verification number of the user"
+            "description": "The bank verification number of the user."
           },
           "score": {
             "type": "string"
@@ -32638,7 +32638,8 @@
             "type": "string"
           },
           "created_at": {
-            "type": "string"
+            "type": "string",
+            "description":"The ISO-8601 timestamp of when the data point was last updated in Okra's database."
           },
           "last_updated": {
             "type": "string"
@@ -32647,8 +32648,7 @@
             "type": "array",
             "items": {
               "type": "string"
-            },
-            "description": ""
+            }
           },
           "customer": {
             "type": "string"
@@ -32667,28 +32667,29 @@
             "type": "string"
           },
           "lastname": {
-            "type": "string"
+            "type": "string",
+            "description": "The lastname of the user."
           },
           "phone": {
             "type": "array",
+            "description": "The phone number of the user.",
             "items": {
               "type": "string"
-            },
-            "description": ""
+            }
           },
           "email": {
             "type": "array",
             "items": {
               "type": "string"
             },
-            "description": ""
+            "description": "The email address of the user."
           },
           "address": {
             "type": "array",
             "items": {
               "type": "string"
             },
-            "description": ""
+            "description": "The residential address of the user."
           },
           "verified": {
             "type": "boolean"
@@ -32698,7 +32699,7 @@
             "items": {
               "$ref": "#/components/schemas/PhotoId1"
             },
-            "description": ""
+            "description": "The passport photograpgh of the user as it in the bvn data"
           },
           "status": {
             "type": "string"
@@ -32773,13 +32774,16 @@
         "type": "object",
         "properties": {
           "_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Okra's unique ID for the photo."
           },
           "url": {
-            "type": "string"
+            "type": "string",
+            "description":"The url pointing to the image"
           },
           "image_type": {
-            "type": "string"
+            "type": "string",
+            "description":"The image type format of the photo "
           }
         },
         "example": {
