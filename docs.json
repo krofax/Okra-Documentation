@@ -12660,7 +12660,7 @@
           "Transactions"
         ],
         "summary": "Download Transactions",
-        "description": "This endpoint allow you to retrieve up to 24 months of a transaction history of a user in CSV format.",
+        "description": "This endpoint allows you to retrieve up to 24 months of a transaction history of a user in CSV format.",
         "operationId": "DownloadTransactions",
         "parameters": [],
         "requestBody": {
@@ -15497,7 +15497,7 @@
           "Payments"
         ],
         "summary": "Get payments by options",
-        "description": "This endpoint allow you to verify the payments via the metadata or options.",
+        "description": "This endpoint allows you to verify the payments via the metadata or options.",
         "operationId": "Getpaymentsbyoptions",
         "parameters": [],
         "requestBody": {
@@ -15554,7 +15554,7 @@
           "Payments"
         ],
         "summary": "fetch payment authorizations by options",
-        "description": "This endpoint allow you to fetch payments authorizations via the metadata or options.",
+        "description": "This endpoint allows you to fetch payments authorizations via the metadata or options.",
         "operationId": "fetchpaymentauthorizationsbyoptions",
         "parameters": [],
         "requestBody": {
