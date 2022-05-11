@@ -23,7 +23,7 @@
           "Auth"
         ],
         "summary": "Get Auth by id",
-        "description": "This endpoint allows you to retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances when available using the id",
+        "description": "This endpoint allows you retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances when available using the id",
         "operationId": "GetAuthbyid",
         "parameters": [],
         "requestBody": {
@@ -214,7 +214,7 @@
           "Auth"
         ],
         "summary": "Get Auth by Customer",
-        "description": "This endpoint allows you to retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances using the the customer Id",
+        "description": "This endpoint allows you retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances using the the customer Id",
         "operationId": "GetAuthbyCustomer",
         "parameters": [],
         "requestBody": {
@@ -432,7 +432,7 @@
           "Auth"
         ],
         "summary": "Get Auth by date",
-        "description": "This endpoint allows you to retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances within a specified date range.",
+        "description": "This endpoint allows you retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances within a specified date range.",
         "operationId": "GetAuthbydate",
         "parameters": [],
         "requestBody": {
@@ -633,7 +633,7 @@
           "Auth"
         ],
         "summary": "Get Auth by bank",
-        "description": "This endpoint allows you to retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances using the bank Id",
+        "description": "This endpoint allows you retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances using the bank Id",
         "operationId": "GetAuthbybank",
         "parameters": [],
         "requestBody": {
@@ -827,7 +827,7 @@
           "Auth"
         ],
         "summary": "Get Auth by customer date",
-        "description": "This endpoint allows you to retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances within a specified date range.",
+        "description": "This endpoint allows you retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances within a specified date range.",
         "operationId": "GetAuthbycustomerdate",
         "parameters": [],
         "requestBody": {
@@ -1028,7 +1028,7 @@
           "Auth"
         ],
         "summary": "Fetch Auths",
-        "description": "This endpoint allows you to retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances.",
+        "description": "This endpoint allows you retrieve the bank account associated with a record's current, savings, and domiciliary accounts, along with high-level account data and balances.",
         "operationId": "FetchAuths",
         "parameters": [],
         "requestBody": {
@@ -1460,7 +1460,7 @@
           "Balance"
         ],
         "summary": "Get balance by customer",
-        "description": "This endpoint allows you to retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts using the customer id",
+        "description": "This endpoint allows you retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts using the customer id",
         "operationId": "Getbalancebycustomer",
         "parameters": [],
         "requestBody": {
@@ -1739,7 +1739,7 @@
           "Balance"
         ],
         "summary": "Check balance",
-        "description": "This endpoint allows you to retrieve in real-time the bank account balance associated with a record's current, savings, and domiciliary accounts.",
+        "description": "This endpoint allows you retrieve in real-time the bank account balance associated with a record's current, savings, and domiciliary accounts.",
         "operationId": "Checkbalance",
         "parameters": [],
         "requestBody": {
@@ -1783,7 +1783,7 @@
           "Balance"
         ],
         "summary": "Get balance by account",
-        "description": "This endpoint allows you to retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts using the account id",
+        "description": "This endpoint allows you retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts using the account id",
         "operationId": "Getbalancebyaccount",
         "parameters": [],
         "requestBody": {
@@ -2036,7 +2036,7 @@
           "Balance"
         ],
         "summary": "Get balance by customer date",
-        "description": "This endpoint allows you to retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts within a specified customer date range.",
+        "description": "This endpoint allows you retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts within a specified customer date range.",
         "operationId": "Getbalancebycustomerdate",
         "parameters": [],
         "requestBody": {
@@ -2256,7 +2256,7 @@
           "Balance"
         ],
         "summary": "Get balance by date",
-        "description": "This endpoint allows you to retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts within a specified date range.",
+        "description": "This endpoint allows you retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts within a specified date range.",
         "operationId": "Getbalancebydate",
         "parameters": [],
         "requestBody": {
@@ -2495,7 +2495,7 @@
           "Balance"
         ],
         "summary": "Get balance by type",
-        "description": "This endpoint allows you to retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts by filtering the type of balance.",
+        "description": "This endpoint allows you retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts by filtering the type of balance.",
         "operationId": "Getbalancebytype",
         "parameters": [],
         "requestBody": {
@@ -2745,7 +2745,7 @@
           "Balance"
         ],
         "summary": "Get balance by Options",
-        "description": "This endpoint allows you to retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts by passing options.",
+        "description": "This endpoint allows you retrieve the bank account balance associated with a record's current, savings, and domiciliary accounts by passing options.",
         "operationId": "GetbalancebyOptions",
         "parameters": [],
         "requestBody": {
@@ -3215,7 +3215,7 @@
           "Bank"
         ],
         "summary": "Get list of banks",
-        "description": "This endpoint allows you to retrieve the list of all institutions currently supported by Okra.",
+        "description": "This endpoint allows you retrieve the list of all institutions currently supported by Okra.",
         "operationId": "Getlistofbanks",
         "parameters": [],
         "responses": {
@@ -5181,7 +5181,7 @@
           "Identity"
         ],
         "summary": "Get identity by id",
-        "description": "This endpoint allows you to retrieve various account holder information on file with the financial institution, including names, emails, phone numbers, and addresses etc, by passing the id params",
+        "description": "This endpoint allows you retrieve various account holder information on file with the financial institution, including names, emails, phone numbers, and addresses etc, by passing the id params",
         "operationId": "Getidentitybyid",
         "parameters": [],
         "requestBody": {
@@ -5326,7 +5326,7 @@
           "Identity"
         ],
         "summary": "Get identity by customer",
-        "description": "This endpoint allows you to retrieve various account holder information on file with the financial institution, including names, emails, phone numbers, and addresses etc, by passing the \\`customer Id\\`",
+        "description": "This endpoint allows you retrieve various account holder information on file with the financial institution, including names, emails, phone numbers, and addresses etc, by passing the \\`customer Id\\`",
         "operationId": "Getidentitybycustomer",
         "parameters": [],
         "requestBody": {
@@ -5471,7 +5471,7 @@
           "Identity"
         ],
         "summary": "Get identity by date",
-        "description": "This endpoint allows you to retrieve various account holder information on file with the financial institution, including names, emails, phone numbers, and addresses etc, within a specific date range the account was linked.",
+        "description": "This endpoint allows you retrieve various account holder information on file with the financial institution, including names, emails, phone numbers, and addresses etc, within a specific date range the account was linked.",
         "operationId": "Getidentitybydate",
         "parameters": [],
         "requestBody": {
@@ -5693,7 +5693,7 @@
           "Identity"
         ],
         "summary": "Get identity by customer date",
-        "description": "This endpoint allows you to retrieve various account holder information on file with the financial institution, including names, emails, phone numbers, and addresses etc, within a specific customer date range.",
+        "description": "This endpoint allows you retrieve various account holder information on file with the financial institution, including names, emails, phone numbers, and addresses etc, within a specific customer date range.",
         "operationId": "Getidentitybycustomerdate",
         "parameters": [],
         "requestBody": {
@@ -6109,7 +6109,7 @@
           "Identity"
         ],
         "summary": "BVN verify",
-        "description": "### What is a BVN?\n\nBVN means Bank Verification Number. It is a unique identity given to users that can be verified across the Nigerian Banking Industry\n\nThis endpoint allows you to Lookup BVN and get detailed information on the BVN Identity.\n\n> **NOTE** - This endpoint is only available for Nigerians.",
+        "description": "### What is a BVN?\n\nBVN means Bank Verification Number. It is a unique identity given to users that can be verified across the Nigerian Banking Industry\n\nThis endpoint allows you Lookup BVN and get detailed information on the BVN Identity.\n\n> **NOTE** - This endpoint is only available for Nigerians.",
         "operationId": "BVNverify",
         "parameters": [],
         "requestBody": {
@@ -6904,7 +6904,7 @@
           "Identity"
         ],
         "summary": "TIN verify",
-        "description": "#### What is TIN?\n\n  \nTIN means Tax Identification Number. It is an identification number used for tax purposes\n\nThis endpoint allows you to fetch your end user's details using the Tax Identification Number of the person\n\n> **NOTE** - This endpoint is only available for Nigeria companies only.",
+        "description": "#### What is TIN?\n\n  \nTIN means Tax Identification Number. It is an identification number used for tax purposes\n\nThis endpoint allows you fetch your end user's details using the Tax Identification Number of the person\n\n> **NOTE** - This endpoint is only available for Nigeria companies only.",
         "operationId": "TINverify",
         "parameters": [],
         "requestBody": {
@@ -7379,7 +7379,7 @@
           "Identity"
         ],
         "summary": "Nuban Name Verify",
-        "description": "#### What is NUBAN?\n\nNUBAN means Nigerian Uniform Bank Account Number. It is standardized system for numbering bank accounts in Nigeria\n\nThis endpoint allows you to verify an account's existence and its holder's name using NUBAN.\n\n> **NOTE** - This endpoint is only available for Nigerians.",
+        "description": "#### What is NUBAN?\n\nNUBAN means Nigerian Uniform Bank Account Number. It is standardized system for numbering bank accounts in Nigeria\n\nThis endpoint allows you verify an account's existence and its holder's name using NUBAN.\n\n> **NOTE** - This endpoint is only available for Nigerians.",
         "operationId": "Nuban Name Verify",
         "parameters": [],
         "requestBody": {
@@ -7846,7 +7846,7 @@
           "Identity"
         ],
         "summary": "Merge Identity",
-        "description": "This endpoint allows you to merge identities in your Okra account",
+        "description": "This endpoint allows you merge identities in your Okra account",
         "operationId": "MergeIdentity",
         "parameters": [],
         "requestBody": {
@@ -8012,7 +8012,7 @@
           "Income"
         ],
         "summary": "Get income by id",
-        "description": "This endpoint allows you to get the details of a specific income of a user.",
+        "description": "This endpoint allows you get the details of a specific income of a user.",
         "operationId": "Getincomebyid",
         "parameters": [],
         "requestBody": {
@@ -8205,7 +8205,7 @@
           "Income"
         ],
         "summary": "Get income by customer",
-        "description": "This endpoint allows you to get the details of a specific income of a user using the \\`customer Id\\`",
+        "description": "This endpoint allows you get the details of a specific income of a user using the \\`customer Id\\`",
         "operationId": "Getincomebycustomer",
         "parameters": [],
         "requestBody": {
@@ -8399,7 +8399,7 @@
           "Income"
         ],
         "summary": "Get income by customer date",
-        "description": "This endpoint allows you to retrieve income insights for current and savings accounts from a specific user. You can receive insights for a period of up to 365 days, depending on the transaction history available for each bank within a specified customer date range.",
+        "description": "This endpoint allows you retrieve income insights for current and savings accounts from a specific user. You can receive insights for a period of up to 365 days, depending on the transaction history available for each bank within a specified customer date range.",
         "operationId": "Getincomebycustomerdate",
         "parameters": [],
         "requestBody": {
@@ -8603,7 +8603,7 @@
           "Income"
         ],
         "summary": "Get income by date",
-        "description": "This endpoint allows you to retrieve income insights for current and savings accounts from a specific user. You can receive insights for a period of up to 365 days, depending on the transaction history available for each bank within a specified date range.",
+        "description": "This endpoint allows you retrieve income insights for current and savings accounts from a specific user. You can receive insights for a period of up to 365 days, depending on the transaction history available for each bank within a specified date range.",
         "operationId": "Getincomebydate",
         "parameters": [],
         "requestBody": {
@@ -8743,7 +8743,7 @@
           "Income"
         ],
         "summary": "Get incomes",
-        "description": "This endpoint allows you to retrieve income insights for current and savings accounts from all users from your Okra account.",
+        "description": "This endpoint allows you retrieve income insights for current and savings accounts from all users from your Okra account.",
         "operationId": "Getincomes",
         "parameters": [],
         "requestBody": {
@@ -12660,7 +12660,7 @@
           "Transactions"
         ],
         "summary": "Download Transactions",
-        "description": "This endpoint allows you to retrieve up to 24 months of a transaction history of a user in CSV format.",
+        "description": "This endpoint allows you retrieve up to 24 months of a transaction history of a user in CSV format.",
         "operationId": "DownloadTransactions",
         "parameters": [],
         "requestBody": {
@@ -12826,7 +12826,7 @@
           "Transactions"
         ],
         "summary": "Download Records",
-        "description": "This endpoint allows you to download all the records in your Okra account",
+        "description": "This endpoint allows you download all the records in your Okra account",
         "operationId": "DownloadRecords",
         "parameters": [],
         "requestBody": {
@@ -13627,7 +13627,7 @@
           "Payments"
         ],
         "summary": "Verify Payment",
-        "description": "This endpoint allows you to verify the status of a payment initiated",
+        "description": "This endpoint allows you verify the status of a payment initiated",
         "operationId": "VerifyPayment",
         "parameters": [],
         "requestBody": {
@@ -13897,7 +13897,7 @@
           "Payments"
         ],
         "summary": "Get all Payments",
-        "description": "This endpoint allows you to retrieve all the payment transactions in your Okra account.",
+        "description": "This endpoint allows you retrieve all the payment transactions in your Okra account.",
         "operationId": "GetallPayments",
         "parameters": [],
         "requestBody": {
@@ -14182,7 +14182,7 @@
           "Payments"
         ],
         "summary": "Get  Payments by id",
-        "description": "This endpoint allows you to retrieve a specific the payment transactions in your Okra account.",
+        "description": "This endpoint allows you retrieve a specific the payment transactions in your Okra account.",
         "operationId": "GetPaymentsbyid",
         "parameters": [],
         "requestBody": {
@@ -14745,7 +14745,7 @@
           "Payments"
         ],
         "summary": "Cancel Future payment",
-        "description": "This endpoint allows you to cancel a future payment.",
+        "description": "This endpoint allows you cancel a future payment.",
         "operationId": "CancelFuturepayment",
         "parameters": [],
         "requestBody": {
@@ -15031,7 +15031,7 @@
           "Payments"
         ],
         "summary": "Reauthorize future payment",
-        "description": "This endpoint allows you to reauthorize a future payment.",
+        "description": "This endpoint allows you reauthorize a future payment.",
         "operationId": "Reauthorizefuturepayment",
         "parameters": [],
         "requestBody": {
@@ -15324,7 +15324,7 @@
           "Payments"
         ],
         "summary": "List Payment Authorizations",
-        "description": "This endpoint allows you to list all payment authorization in your Okra account.",
+        "description": "This endpoint allows you list all payment authorization in your Okra account.",
         "operationId": "ListPaymentAuthorizations",
         "parameters": [],
         "requestBody": {
@@ -15433,7 +15433,7 @@
           "Payments"
         ],
         "summary": "Get payments",
-        "description": "This endpoint allows you to list details of a specific payment.",
+        "description": "This endpoint allows you list details of a specific payment.",
         "operationId": "Getpayments",
         "parameters": [],
         "responses": {
@@ -15457,7 +15457,7 @@
           "Payments"
         ],
         "summary": "Get authorization by customer",
-        "description": "This endpoint allows you to get authorization from your customers to initiate payment.",
+        "description": "This endpoint allows you get authorization from your customers to initiate payment.",
         "operationId": "Getauthorizationbycustomer",
         "parameters": [],
         "requestBody": {
@@ -15497,7 +15497,7 @@
           "Payments"
         ],
         "summary": "Get payments by options",
-        "description": "This endpoint allows you to verify the payments via the metadata or options.",
+        "description": "This endpoint allows you verify the payments via the metadata or options.",
         "operationId": "Getpaymentsbyoptions",
         "parameters": [],
         "requestBody": {
@@ -15554,7 +15554,7 @@
           "Payments"
         ],
         "summary": "fetch payment authorizations by options",
-        "description": "This endpoint allows you to fetch payments authorizations via the metadata or options.",
+        "description": "This endpoint allows you fetch payments authorizations via the metadata or options.",
         "operationId": "fetchpaymentauthorizationsbyoptions",
         "parameters": [],
         "requestBody": {
