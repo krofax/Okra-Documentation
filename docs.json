@@ -7379,7 +7379,7 @@
           "Identity"
         ],
         "summary": "Nuban Name Verify",
-        "description": "#### What is NUBAN?\n\nNUBAN means Nigerian Uniform Bank Account Number. It is standardized system for numbering bank accounts in Nigeria\n\nTThis endpoint allows you to verify an account's existence and its holder's name using NUBAN.\n\n> **NOTE** - This endpoint is only available for Nigerians.",
+        "description": "#### What is NUBAN?\n\nNUBAN means Nigerian Uniform Bank Account Number. It is standardized system for numbering bank accounts in Nigeria\n\nThis endpoint allows you to verify an account's existence and its holder's name using NUBAN.\n\n> **NOTE** - This endpoint is only available for Nigerians.",
         "operationId": "Nuban Name Verify",
         "parameters": [],
         "requestBody": {
