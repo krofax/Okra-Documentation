@@ -4,7 +4,7 @@
   "description": "Guides and reference materials to help you get started with an Okra integration.",
   "main": "index.js",
   "scripts": {
-    "deploy": "rdme openapi --key TLpoqY6zPqz4oEBYsWsrmoKGfnqkyL3J docs.json"
+    "deploy": "rdme openapi --key rdme_xn8s9h0855218ba7d185974de43eddedfb6337c0a3b8053bb6d96360e789a576f83dbf docs.json"
   },
   "repository": {
     "type": "git",
